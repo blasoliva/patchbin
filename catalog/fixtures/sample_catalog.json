@@ -1,0 +1,662 @@
+[
+{
+  "model": "catalog.connectorfamily",
+  "pk": 1,
+  "fields": {
+    "name": "Phone / jack (TS/TRS/TRRS)",
+    "slug": "phone-jack-tstrstrrs",
+    "description": "Cylindrical tip-ring-sleeve 'jack' plugs in 1/4 in, 3.5 mm, 2.5 mm and 4.4 mm (Bantam) sizes.",
+    "sort_order": 10
+  }
+},
+{
+  "model": "catalog.connectorfamily",
+  "pk": 2,
+  "fields": {
+    "name": "XLR",
+    "slug": "xlr",
+    "description": "Circular latching connectors, 3 to 7 pins, plus miniature (mini-XLR) variants.",
+    "sort_order": 20
+  }
+},
+{
+  "model": "catalog.connectorfamily",
+  "pk": 3,
+  "fields": {
+    "name": "RCA / phono",
+    "slug": "rca-phono",
+    "description": "Unbalanced coaxial connectors, often colour-coded. Analogue line and coaxial S/PDIF.",
+    "sort_order": 30
+  }
+},
+{
+  "model": "catalog.connectorfamily",
+  "pk": 4,
+  "fields": {
+    "name": "DIN / MIDI",
+    "slug": "din-midi",
+    "description": "Multi-pin circular DIN connectors, including 5-pin MIDI and MIDI-over-TRS.",
+    "sort_order": 40
+  }
+},
+{
+  "model": "catalog.connectorfamily",
+  "pk": 5,
+  "fields": {
+    "name": "Speaker connectors",
+    "slug": "speaker-connectors",
+    "description": "High-current unshielded terminations: speakON, banana, spade, bare wire.",
+    "sort_order": 50
+  }
+},
+{
+  "model": "catalog.connectorfamily",
+  "pk": 6,
+  "fields": {
+    "name": "BNC",
+    "slug": "bnc",
+    "description": "Bayonet coaxial connectors in 75 ohm (digital sync) and 50 ohm (RF) variants.",
+    "sort_order": 60
+  }
+},
+{
+  "model": "catalog.connectorfamily",
+  "pk": 7,
+  "fields": {
+    "name": "Optical (TOSLINK / EIAJ)",
+    "slug": "optical-toslink-eiaj",
+    "description": "Fibre-optic connectors for S/PDIF and ADAT, in full-size and 3.5 mm mini forms.",
+    "sort_order": 70
+  }
+},
+{
+  "model": "catalog.connectorfamily",
+  "pk": 8,
+  "fields": {
+    "name": "D-sub multicore",
+    "slug": "d-sub-multicore",
+    "description": "Rectangular multi-pin connectors (DB25 and friends) carrying 8 channels of analogue or AES3.",
+    "sort_order": 80
+  }
+},
+{
+  "model": "catalog.connectorfamily",
+  "pk": 9,
+  "fields": {
+    "name": "Networked audio",
+    "slug": "networked-audio",
+    "description": "Twisted-pair and fibre data connectors for Dante, AES50 and AVB.",
+    "sort_order": 90
+  }
+},
+{
+  "model": "catalog.connectorfamily",
+  "pk": 10,
+  "fields": {
+    "name": "USB / data",
+    "slug": "usb-data",
+    "description": "Digital data connectors used by audio interfaces and USB microphones.",
+    "sort_order": 100
+  }
+},
+{
+  "model": "catalog.connectorfamily",
+  "pk": 11,
+  "fields": {
+    "name": "IEM / headphone detachable",
+    "slug": "iem-headphone-detachable",
+    "description": "Small detachable connectors for in-ear monitors and hi-fi headphone cables.",
+    "sort_order": 110
+  }
+},
+{
+  "model": "catalog.connectorfamily",
+  "pk": 12,
+  "fields": {
+    "name": "Bare / pigtail",
+    "slug": "bare-pigtail",
+    "description": "Unterminated or flying-lead ends for custom terminations and repairs.",
+    "sort_order": 120
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 1,
+  "fields": {
+    "family": 1,
+    "name": "TS (1/4 in)",
+    "slug": "ts-14-in",
+    "abbreviation": "TS",
+    "contact_count": 2,
+    "description": "",
+    "typical_uses": "Electric instruments, guitar pedals, unbalanced line.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 2,
+  "fields": {
+    "family": 1,
+    "name": "TRS (1/4 in)",
+    "slug": "trs-14-in",
+    "abbreviation": "TRS",
+    "contact_count": 3,
+    "description": "",
+    "typical_uses": "Balanced line and mic, console inserts, stereo headphones.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 3,
+  "fields": {
+    "family": 1,
+    "name": "TS (3.5 mm)",
+    "slug": "ts-35-mm",
+    "abbreviation": "TS",
+    "contact_count": 2,
+    "description": "",
+    "typical_uses": "Mono unbalanced, modular sync and CV.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 4,
+  "fields": {
+    "family": 1,
+    "name": "TRS (3.5 mm)",
+    "slug": "trs-35-mm",
+    "abbreviation": "TRS",
+    "contact_count": 3,
+    "description": "",
+    "typical_uses": "Stereo headphones, consumer line, camera audio.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 5,
+  "fields": {
+    "family": 1,
+    "name": "TRRS (3.5 mm)",
+    "slug": "trrs-35-mm",
+    "abbreviation": "TRRS",
+    "contact_count": 4,
+    "description": "",
+    "typical_uses": "Headsets with microphone, smartphone audio.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 6,
+  "fields": {
+    "family": 1,
+    "name": "Bantam / TT (4.4 mm)",
+    "slug": "bantam-tt-44-mm",
+    "abbreviation": "TT",
+    "contact_count": 3,
+    "description": "",
+    "typical_uses": "Studio patchbays.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 7,
+  "fields": {
+    "family": 2,
+    "name": "XLR3",
+    "slug": "xlr3",
+    "abbreviation": "XLR",
+    "contact_count": 3,
+    "description": "",
+    "typical_uses": "Balanced microphone and line level.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 8,
+  "fields": {
+    "family": 2,
+    "name": "XLR4",
+    "slug": "xlr4",
+    "abbreviation": "XLR4",
+    "contact_count": 4,
+    "description": "",
+    "typical_uses": "Intercom headsets, 4-pin headphones, some DC power.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 9,
+  "fields": {
+    "family": 2,
+    "name": "XLR5",
+    "slug": "xlr5",
+    "abbreviation": "XLR5",
+    "contact_count": 5,
+    "description": "",
+    "typical_uses": "DMX512 lighting, dual-mono intercom, stereo headsets.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 10,
+  "fields": {
+    "family": 2,
+    "name": "Mini-XLR (TA3)",
+    "slug": "mini-xlr-ta3",
+    "abbreviation": "TA3",
+    "contact_count": 3,
+    "description": "",
+    "typical_uses": "Lavalier microphones, wireless bodypacks.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 11,
+  "fields": {
+    "family": 2,
+    "name": "Mini-XLR (TA4)",
+    "slug": "mini-xlr-ta4",
+    "abbreviation": "TA4",
+    "contact_count": 4,
+    "description": "",
+    "typical_uses": "Bodypack microphones and headsets.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 12,
+  "fields": {
+    "family": 3,
+    "name": "RCA (analogue)",
+    "slug": "rca-analogue",
+    "abbreviation": "RCA",
+    "contact_count": 2,
+    "description": "",
+    "typical_uses": "Consumer line level, turntables, DJ mixers.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 13,
+  "fields": {
+    "family": 3,
+    "name": "RCA (S/PDIF)",
+    "slug": "rca-spdif",
+    "abbreviation": "RCA",
+    "contact_count": 2,
+    "description": "",
+    "typical_uses": "Coaxial digital audio at 75 ohm.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 14,
+  "fields": {
+    "family": 4,
+    "name": "5-pin DIN (MIDI)",
+    "slug": "5-pin-din-midi",
+    "abbreviation": "DIN",
+    "contact_count": 5,
+    "description": "",
+    "typical_uses": "MIDI control between instruments.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 15,
+  "fields": {
+    "family": 4,
+    "name": "MIDI over TRS Type A",
+    "slug": "midi-over-trs-type-a",
+    "abbreviation": "TRS-A",
+    "contact_count": 3,
+    "description": "",
+    "typical_uses": "Compact MIDI on a 3.5 mm jack.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 16,
+  "fields": {
+    "family": 4,
+    "name": "3-pin DIN",
+    "slug": "3-pin-din",
+    "abbreviation": "DIN3",
+    "contact_count": 3,
+    "description": "",
+    "typical_uses": "Vintage hi-fi and tape machines.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 17,
+  "fields": {
+    "family": 5,
+    "name": "speakON NL2",
+    "slug": "speakon-nl2",
+    "abbreviation": "NL2",
+    "contact_count": 2,
+    "description": "",
+    "typical_uses": "Amplifier to passive speaker, single channel.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 18,
+  "fields": {
+    "family": 5,
+    "name": "speakON NL4",
+    "slug": "speakon-nl4",
+    "abbreviation": "NL4",
+    "contact_count": 4,
+    "description": "",
+    "typical_uses": "Amplifier to passive speaker, bi-amp or two channels.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 19,
+  "fields": {
+    "family": 5,
+    "name": "Banana plug",
+    "slug": "banana-plug",
+    "abbreviation": "banana",
+    "contact_count": 1,
+    "description": "",
+    "typical_uses": "Amplifier binding posts and speaker terminals.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 20,
+  "fields": {
+    "family": 5,
+    "name": "Spade lug",
+    "slug": "spade-lug",
+    "abbreviation": "spade",
+    "contact_count": 1,
+    "description": "",
+    "typical_uses": "Screw-down speaker binding posts.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 21,
+  "fields": {
+    "family": 6,
+    "name": "BNC (75 ohm)",
+    "slug": "bnc-75-ohm",
+    "abbreviation": "BNC",
+    "contact_count": 1,
+    "description": "",
+    "typical_uses": "Word clock, AES/EBU coax, digital sync.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 22,
+  "fields": {
+    "family": 6,
+    "name": "BNC (50 ohm)",
+    "slug": "bnc-50-ohm",
+    "abbreviation": "BNC",
+    "contact_count": 1,
+    "description": "",
+    "typical_uses": "RF and test equipment.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 23,
+  "fields": {
+    "family": 7,
+    "name": "TOSLINK (full-size)",
+    "slug": "toslink-full-size",
+    "abbreviation": "TOSLINK",
+    "contact_count": 1,
+    "description": "",
+    "typical_uses": "Optical S/PDIF and ADAT.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 24,
+  "fields": {
+    "family": 7,
+    "name": "Mini-optical (3.5 mm)",
+    "slug": "mini-optical-35-mm",
+    "abbreviation": "mini-optical",
+    "contact_count": 1,
+    "description": "",
+    "typical_uses": "Optical S/PDIF on a combo mini-jack.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 25,
+  "fields": {
+    "family": 8,
+    "name": "DB25 (Tascam pinout)",
+    "slug": "db25-tascam-pinout",
+    "abbreviation": "DB25",
+    "contact_count": 25,
+    "description": "",
+    "typical_uses": "Eight channels of analogue I/O to interfaces and recorders.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 26,
+  "fields": {
+    "family": 8,
+    "name": "DB25 (AES59)",
+    "slug": "db25-aes59",
+    "abbreviation": "DB25",
+    "contact_count": 25,
+    "description": "",
+    "typical_uses": "Eight channels of AES3 digital audio.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 27,
+  "fields": {
+    "family": 9,
+    "name": "RJ45 (Cat5e/6)",
+    "slug": "rj45-cat5e6",
+    "abbreviation": "RJ45",
+    "contact_count": 8,
+    "description": "",
+    "typical_uses": "Dante, AES50 and AVB on standard network cable.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 28,
+  "fields": {
+    "family": 9,
+    "name": "etherCON",
+    "slug": "ethercon",
+    "abbreviation": "etherCON",
+    "contact_count": 8,
+    "description": "",
+    "typical_uses": "Ruggedized locking RJ45 for stage use.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 29,
+  "fields": {
+    "family": 10,
+    "name": "USB-A",
+    "slug": "usb-a",
+    "abbreviation": "USB-A",
+    "contact_count": null,
+    "description": "",
+    "typical_uses": "Host end of audio interfaces and USB microphones.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 30,
+  "fields": {
+    "family": 10,
+    "name": "USB-B",
+    "slug": "usb-b",
+    "abbreviation": "USB-B",
+    "contact_count": null,
+    "description": "",
+    "typical_uses": "Device end of many desktop audio interfaces.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 31,
+  "fields": {
+    "family": 10,
+    "name": "USB-C",
+    "slug": "usb-c",
+    "abbreviation": "USB-C",
+    "contact_count": null,
+    "description": "",
+    "typical_uses": "Modern bus-powered interfaces and controllers.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 32,
+  "fields": {
+    "family": 10,
+    "name": "USB Mini-B",
+    "slug": "usb-mini-b",
+    "abbreviation": "mini-USB",
+    "contact_count": null,
+    "description": "",
+    "typical_uses": "Older interfaces and MIDI controllers.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 33,
+  "fields": {
+    "family": 11,
+    "name": "MMCX",
+    "slug": "mmcx",
+    "abbreviation": "MMCX",
+    "contact_count": null,
+    "description": "",
+    "typical_uses": "Detachable in-ear monitor cables.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 34,
+  "fields": {
+    "family": 11,
+    "name": "2-pin 0.78 mm",
+    "slug": "2-pin-078-mm",
+    "abbreviation": "2-pin",
+    "contact_count": 2,
+    "description": "",
+    "typical_uses": "Detachable IEM cables, custom in-ear standard.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 35,
+  "fields": {
+    "family": 11,
+    "name": "4.4 mm Pentaconn",
+    "slug": "44-mm-pentaconn",
+    "abbreviation": "Pentaconn",
+    "contact_count": 5,
+    "description": "",
+    "typical_uses": "Balanced headphone outputs.",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "catalog.connectortype",
+  "pk": 36,
+  "fields": {
+    "family": 12,
+    "name": "Bare tinned leads",
+    "slug": "bare-tinned-leads",
+    "abbreviation": "bare",
+    "contact_count": null,
+    "description": "",
+    "typical_uses": "Custom terminations, terminal blocks, repairs.",
+    "is_active": true,
+    "sort_order": 0
+  }
+}
+]
