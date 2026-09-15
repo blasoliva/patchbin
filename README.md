@@ -17,6 +17,8 @@ stored, and what condition it's in — plus fast search so you can answer
 - [Project layout](#project-layout)
 - [Development notes](#development-notes)
 
+> Built as part of the [AI Dev Tools Zoomcamp 2026](https://courses.datatalks.club/ai-dev-tools-2026/) coursework.
+
 ## Status
 
 Early development. What works today:
